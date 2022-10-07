@@ -57,22 +57,6 @@ class Encoder(nn.Module):
         super().__init__()
 
         self.d_model = d_model
-
-        # # # # event type embedding (23 512) (K M)
-        # fname = '{}_model/POI_embedding.npy'.format(Constants.DATASET)
-        # weight_ = None
-        # if os.path.isfile(fname):
-        #     weight_ = torch.tensor(np.load(fname, allow_pickle=True), device='cuda')
-        #     # weights = np.load(fname, allow_pickle=True)
-        #     # weight__ = torch.tensor(weights, device='cuda')
-        #     # weight_ = torch.zeros((num_types+1, d_model), device='cuda')
-        #     # weight_[:num_types,:] = weight__
-        #     # model.encoder.event_emb.from_pretrained(torch.tensor(weights, device=opt.device))
-        #     print('[Info] Loading event_emb from pretrained ..')
-        #     print(weight_[1][:10])
-        # else:
-        #     print('file {fname} is not found'.format(fname=fname))
-        # self.event_emb = nn.Embedding(num_types+1, d_model, padding_idx=Constants.PAD, _weight=weight_)  # dding 0
         self.event_emb = nn.Embedding(num_types+1, d_model, padding_idx=Constants.PAD)  # dding 0
 
         self.layer_stack = nn.ModuleList([
@@ -159,8 +143,6 @@ class Predictor(nn.Module):
 
         out = predicting1 * self.a + predicting2 * self.b + predicting3 * self.c + predicting4 * self.d
 
-        # out = self.rating_linear(data)
-        # out = F.normalize(out, p=2, dim=-1, eps=1e-05)
         out = torch.tanh(out)  # + self.e * torch.tanh(z)
 
         target_ = torch.ones(event_type.size()[0], self.num_types, device=self.device, dtype=torch.double)
