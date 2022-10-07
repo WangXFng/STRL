@@ -19,8 +19,9 @@ Datasets: Yelp, Gowalla and Yelp2020.
 
 ### Instructions
 * step 1 check transformer/Constants.py
-* step 2 training.
+* step 2 cal_poi_pairwise_relation.
 > python cal_poi_pairwise_relation.py
+* step 3 training.
 > python Main.py
 
 ### Note
