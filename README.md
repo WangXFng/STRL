@@ -26,6 +26,6 @@ Datasets: Yelp, Gowalla and Yelp2020.
 ### Note
 * Since the best hyperparameter configuration takes a lot of memory, it hasn't been set to perform best, please tune it and get the result.
 * If there is any problem, please contact to kaysen@hdu.edu.cn.
-* The full STaTRL model can be found in [STaTRL](https://github.com/wxf2445/STaTRL) 
+* The full STaTRL model can be found in [STaTRL](https://github.com/wxf2445/STaTRL), our paper can be found in [Applied Intelligence](https://link.springer.com/content/pdf/10.1007/s10489-022-03858-w.pdf).
 * If this repository helps you, please cite:
   * Wang X, Fukumoto F, Li J, et al. STaTRL: Spatial-temporal and text representation learning for POI recommendation[J]. Applied Intelligence, 2022: 1-16.
