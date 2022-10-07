@@ -3,10 +3,6 @@
 ### Applied Intelligence 2022. IF=5.019 JCR分区（Q2）
 
 ### This repository is easily used for comparison of STaTRL without Text Representation Learning. 
-Datasets: Yelp, Gowalla and Yelp2020. 
-
-2022 IF=5.019 JCR分区（Q2）
-
 
 | dataset | # Users | # POI |
 |---------|---------|---------|
