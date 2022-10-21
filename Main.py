@@ -215,7 +215,7 @@ def main(trial):
     opt.n_layers = 2  # 2
     opt.d_inner_hid = 256  # 768
     opt.d_rnn = 128
-    opt.d_model = 512
+    opt.d_model = 1024
     opt.d_k = 256
     opt.d_v = 256
     opt.n_head = 4  # 8

@@ -19,21 +19,23 @@ else:
 
 class Dataset(object):
     def __init__(self):
-        users_num = {
-            'Dataset': 24941,
-            'Gowalla': 18737,
-            'Yelp': 30887,
-            'Yelp2020': 28038
-        }
-        pois_num = {
-            'Dataset': 28593,
-            'Gowalla': 32510,
-            'Yelp': 18995,
-            'Yelp2020': 15745
-        }
+        # users_num = {
+        #     'Dataset': 24941,
+        #     'Gowalla': 18737,
+        #     'Yelp': 30887,
+        #     'Yelp2020': 28038
+        # }
+        # pois_num = {
+        #     'Dataset': 28593,
+        #     'Gowalla': 32510,
+        #     'Yelp': 18995,
+        #     'Yelp2020': 15745
+        # }
 
-        self.user_num = users_num.get(Constants.DATASET)
-        self.poi_num = pois_num.get(Constants.DATASET)
+        # self.user_num = users_num.get(Constants.DATASET)
+        # self.poi_num = pois_num.get(Constants.DATASET)
+        self.user_num = Constants.USER_NUMBER
+        self.poi_num = Constants.TYPE_NUMBER
         self.place_coords = self.read_poi_coos()
 
         self.training_user = self.read_training_data()

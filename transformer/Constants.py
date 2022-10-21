@@ -1,5 +1,5 @@
 TOP_N = 10
-DATASET = "Yelp2020"
+DATASET = "Foursquare"
 PAD = 0
 
 NEGATIVE_NUM = 10
