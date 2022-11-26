@@ -128,8 +128,11 @@ class Dataset(object):
         all_train_data = open(directory_path + train_file, 'r').readlines()
         for eachline in all_train_data:
             uid, lid, time = eachline.strip().split()
-            uid, lid = int(uid), int(lid)
-            user_traj[uid].append(lid+1)
+            if Constants.DATASET == 'Gowalla':
+                uid, lid = int(uid), int(lid)
+            else:
+                uid, lid = int(uid), int(lid)+1
+            user_traj[uid].append(lid)
             # poi_traj[lid].append(uid+1)
         # return user_traj, poi_traj
         return user_traj
@@ -142,8 +145,11 @@ class Dataset(object):
         all_tune_data = open(directory_path + tune_file, 'r').readlines()
         for eachline in all_tune_data:
             uid, lid, time = eachline.strip().split()
-            uid, lid = int(uid), int(lid)
-            user_traj[uid].append(lid+1)
+            if Constants.DATASET == 'Gowalla':
+                uid, lid = int(uid), int(lid)
+            else:
+                uid, lid = int(uid), int(lid)+1
+            user_traj[uid].append(lid)
             # poi_traj[lid].append(uid+1)
         # return user_traj, poi_traj
         return user_traj
@@ -156,8 +162,11 @@ class Dataset(object):
         all_test_data = open(directory_path + tune_file, 'r').readlines()
         for eachline in all_test_data:
             uid, lid, time = eachline.strip().split()
-            uid, lid = int(uid), int(lid)
-            user_traj[uid].append(lid+1)
+            if Constants.DATASET == 'Gowalla':
+                uid, lid = int(uid), int(lid)
+            else:
+                uid, lid = int(uid), int(lid)+1
+            user_traj[uid].append(lid)
             # poi_traj[lid].append(uid+1)
         # return user_traj, poi_traj
         return user_traj
