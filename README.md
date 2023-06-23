@@ -28,4 +28,13 @@
 * If there is any problem, please contact to kaysenn@163.com.
 * The full STaTRL model can be found in [STaTRL](https://github.com/wxf2445/STaTRL), our paper can be found in [Applied Intelligence](https://link.springer.com/content/pdf/10.1007/s10489-022-03858-w.pdf).
 * If this repository helps you, please cite:
-  * Wang X, Fukumoto F, Li J, et al. STaTRL: Spatial-temporal and text representation learning for POI recommendation[J]. Applied Intelligence, 2022: 1-16.
+    @article{wang2023statrl,
+      title={STaTRL: Spatial-temporal and text representation learning for POI recommendation},
+      author={Wang, Xinfeng and Fukumoto, Fumiyo and Li, Jiyi and Yu, Dongjin and Sun, Xiaoxiao},
+      journal={Applied Intelligence},
+      volume={53},
+      number={7},
+      pages={8286--8301},
+      year={2023},
+      publisher={Springer}
+    }
