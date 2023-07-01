@@ -1,6 +1,6 @@
 # Spatial-Temporal and Text Representation Learning (STaTRL)
 
-### Applied Intelligence 2022. IF=5.019 JCR分区（Q2）
+### Applied Intelligence (IF'2022=5.019 JCR分区（Q2）)
 
 ### This repository is easily used for comparison of STaTRL without Text Representation Learning. 
 
